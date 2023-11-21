@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Atividade de Probabilidade</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Distribuição uniforme discreta</h1>
+        <p>É uma distribuição de probabilidade em que todos os valores dentro de um intervalo finito têm a mesma
+            probabilidade de ocorrer. </p>
+    </header>
+
+    <main class="container">
+        <div class="inputs">
+            <div>
+                <label for="inputA">Parâmetro A:</label>
+                <input type="number" id="inputA" value="1">
+            </div>
+            <div>
+                <label for="inputB">Parâmetro B:</label>
+                <input type="number" id="inputB" value="6">
+            </div>
+        </div>
+
+        <button onclick="atualizarGraficos()">Atualizar Gráficos</button>
+
+
+        <div class="graficos">
+            <canvas id="pmfChart" width="400" height="200"></canvas>
+            <canvas id="cdfChart" width="400" height="200"></canvas>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
